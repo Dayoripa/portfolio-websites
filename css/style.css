@@ -453,4 +453,36 @@ button {
 .language__subtitle {
   font-size: 0.8em;
 }
+
+.about {
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  padding: 1em 1.2em;
+}
+
+@media (min-width: 30em) {
+  .about {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 62em) {
+  .about {
+    font-size: 1.8em;
+    padding: 1em 0;
+  }
+}
+
+.about__title {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.about__me {
+  text-align: justify;
+  font-size: 0.8em;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */
