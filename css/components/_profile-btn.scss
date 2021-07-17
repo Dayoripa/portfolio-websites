@@ -1,0 +1,26 @@
+.btn {
+  background-color: $btn;
+  font-size: 1.3rem;
+  padding: 0.4em 0.8em;
+  color: $white;
+  width: 9rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  @media (min-width: 62em) {
+    width: 10rem;
+  }
+  @media (min-width: 80em) {
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+}
+
+.btn__text {
+  color: $white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.btn:hover {
+  filter: brightness(130%);
+}
