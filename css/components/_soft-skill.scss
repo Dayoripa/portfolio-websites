@@ -1,0 +1,36 @@
+.skills__soft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-skills {
+  width: 60%;
+  font-size: 2rem;
+  padding: 1em 0;
+  margin: 1em 0;
+  border-radius: 1rem;
+}
+
+.list-skills__text {
+  font-family: $raleway;
+  font-weight: 600;
+  text-align: center;
+  color: $text-color;
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+
+.list-skills--design {
+  background-color: $design;
+}
+.list-skills--develop {
+  background-color: $develop;
+}
+.list-skills--marketing {
+  background-color: $marketing;
+}
+.list-skills--it {
+  background-color: $it;
+}
