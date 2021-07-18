@@ -13,7 +13,7 @@
     justify-content: space-around;
   }
   @media (min-width: 62em) {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
   }
   @media (min-width: 125em) {
     display: flex;
@@ -24,10 +24,7 @@
 }
 
 .list-skills {
-  width: 10em;
-  padding: 1em 0;
-  margin: 1em 0;
-  border-radius: 1rem;
+  @include skills-soft;
 }
 
 .list-skills__text {
@@ -39,22 +36,22 @@
   font-size: 0.8em;
 }
 
-.list-skills--design {
-  background-color: $design;
-}
-.list-skills--develop {
-  background-color: $develop;
-}
-.list-skills--marketing {
-  background-color: $marketing;
-}
-.list-skills--it {
-  background-color: $it;
-}
-.list-skills--busines {
-  background-color: $busines;
-}
+// .list-skills--design {
+//   background-color: $design;
+// }
+// .list-skills--develop {
+//   background-color: $develop;
+// }
+// .list-skills--marketing {
+//   background-color: $marketing;
+// }
+// .list-skills--it {
+//   background-color: $it;
+// }
+// .list-skills--busines {
+//   background-color: $busines;
+// }
 
-.list-skills--comunication {
-  background-color: $comunication;
-}
+// .list-skills--comunication {
+//   background-color: $comunication;
+// }

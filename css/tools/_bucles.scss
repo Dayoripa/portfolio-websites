@@ -1,0 +1,7 @@
+$colors: ($design, $develop, $marketing, $it, $busines, $comunication);
+
+@for $i from 1 through 5 {
+  .list-skills:nth-child(#{$i}) {
+    background-color: (nth($colors, $i));
+  }
+}
