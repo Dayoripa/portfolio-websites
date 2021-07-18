@@ -3,13 +3,17 @@
   width: 100%;
   height: 6rem;
   line-height: 1.6;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.6em;
+  @media (min-width: 62em) {
+    height: 4em;
+  }
   @media (min-width: 80em) {
-    height: 8rem;
+    height: 4.2em;
   }
 }
 
@@ -20,7 +24,7 @@
   color: $white;
   text-align: left;
   @media (min-width: 62em) {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 }
 

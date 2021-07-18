@@ -32,21 +32,23 @@ button {
 }
 
 .navbar {
-  height: 10rem;
+  height: 12rem;
   width: 100%;
+  -webkit-box-shadow: 0 0.4rem 0.5rem #de596a;
+          box-shadow: 0 0.4rem 0.5rem #de596a;
+  position: fixed;
 }
 
 @media (min-width: 48em) {
   .navbar {
+    width: 90%;
     border-radius: 1rem 1rem 0 0;
   }
 }
 
 .navbar__container {
-  background-color: #33424f;
+  background-color: #262677;
   height: 100%;
-  -webkit-box-shadow: 0 0.4rem 0.5rem #e5e5e5;
-          box-shadow: 0 0.4rem 0.5rem #e5e5e5;
   left: 0;
   top: 0;
   width: 100%;
@@ -54,7 +56,6 @@ button {
 
 @media (min-width: 48em) {
   .navbar__container {
-    background-color: #262677;
     border-radius: 1rem 1rem 0 0;
   }
 }
@@ -63,8 +64,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 62em) {
@@ -96,12 +101,25 @@ button {
 
 .navbar__text {
   font-size: 1.8rem;
-  font-weight: 500;
-  color: #ff6600;
+  font-weight: 700;
+  color: #de596a;
+}
+
+@media (min-width: 62em) {
+  .navbar__text {
+    font-size: 2rem;
+  }
 }
 
 .navbar__img {
   border-radius: 50%;
+}
+
+@media (min-width: 62em) {
+  .navbar__img {
+    width: 12%;
+    height: 12%;
+  }
 }
 
 .navbar__links {
@@ -121,8 +139,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #33424f;
-  height: 90vh;
+  background-color: #262677;
+  height: 100%;
   overflow-y: auto;
   opacity: 0;
   pointer-events: none;
@@ -132,7 +150,6 @@ button {
 
 @media (min-width: 62em) {
   .navbar__links {
-    background-color: #262677;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -169,7 +186,17 @@ button {
 }
 
 .list:hover {
-  background-color: #171e24;
+  background-color: #202074;
+}
+
+.navbar__open-menu {
+  width: 20rem;
+  height: 6rem;
+}
+
+.navbar__close-menu {
+  width: 18rem;
+  height: 7rem;
 }
 
 .navbar__open-menu,
@@ -189,7 +216,7 @@ button {
 .navbar__close-menu {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 1.6em 2.5em;
+  padding: 1.1em 0;
 }
 
 .menu-opened {
@@ -217,12 +244,19 @@ button {
   font-size: 1.7rem;
   line-height: 1.3;
   text-align: center;
+  background: #363c8b;
+  padding-top: 14rem;
 }
 
 @media (min-width: 30em) {
   .profile {
     font-size: 2rem;
-    background: #363c8b;
+  }
+}
+
+@media (min-width: 48em) {
+  .profile {
+    border-radius: 1rem 1rem 0 0;
   }
 }
 
@@ -258,11 +292,13 @@ button {
 
 .profile__title {
   margin-bottom: 0.8em;
+  color: #fff;
 }
 
 .profile__subtitle {
   font-size: 0.8em;
   margin-bottom: 1.3em;
+  color: #676976;
 }
 
 @media (min-width: 62em) {
@@ -301,7 +337,8 @@ button {
   width: 100%;
   height: 6rem;
   line-height: 1.6;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,9 +351,15 @@ button {
   padding: 0.6em;
 }
 
+@media (min-width: 62em) {
+  .card {
+    height: 4em;
+  }
+}
+
 @media (min-width: 80em) {
   .card {
-    height: 8rem;
+    height: 4.2em;
   }
 }
 
@@ -330,7 +373,7 @@ button {
 
 @media (min-width: 62em) {
   .card__body {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 }
 
@@ -339,7 +382,7 @@ button {
 }
 
 .btn {
-  background-color: #3a66f7;
+  background-color: #140692;
   font-size: 1.3rem;
   padding: 0.4em 0.8em;
   color: #fff;
@@ -350,19 +393,20 @@ button {
 
 @media (min-width: 62em) {
   .btn {
-    width: 10rem;
+    width: 7em;
+    font-size: 0.9em;
   }
 }
 
 @media (min-width: 80em) {
   .btn {
-    width: 15rem;
-    font-size: 1.5rem;
+    width: 9em;
   }
 }
 
 .btn__text {
   color: #fff;
+  font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -457,7 +501,6 @@ button {
 .about {
   width: 100%;
   text-align: center;
-  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   padding: 1em 1.2em;
 }
@@ -478,20 +521,28 @@ button {
 .about__title {
   font-size: 1.3em;
   margin-bottom: 1em;
+  color: #061c9b;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .about__me {
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 500;
 }
 
 .skills {
   background-color: #f0eaea;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+}
+
+@media (min-width: 125em) {
+  .skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
 }
 
 .skills__soft {
@@ -506,11 +557,51 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2rem;
+}
+
+@media (min-width: 30em) {
+  .skills__soft {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .skills__soft {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 62em) {
+  .skills__soft {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: 125em) {
+  .skills__soft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 3rem;
+  }
 }
 
 .list-skills {
-  width: 60%;
-  font-size: 2rem;
+  width: 10em;
   padding: 1em 0;
   margin: 1em 0;
   border-radius: 1rem;
@@ -541,6 +632,14 @@ button {
   background-color: #b4bbf6;
 }
 
+.list-skills--busines {
+  background-color: #b5f3eb;
+}
+
+.list-skills--comunication {
+  background-color: #d89292;
+}
+
 .skill__technical {
   height: 100%;
   display: -ms-grid;
@@ -564,8 +663,8 @@ button {
   .skill__technical {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    -webkit-column-gap: 2em;
-            column-gap: 2em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     font-size: 2.1rem;
   }
 }

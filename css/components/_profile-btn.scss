@@ -7,16 +7,17 @@
   border-radius: 0.5rem;
   text-align: center;
   @media (min-width: 62em) {
-    width: 10rem;
+    width: 7em;
+    font-size: 0.9em;
   }
   @media (min-width: 80em) {
-    width: 15rem;
-    font-size: 1.5rem;
+    width: 9em;
   }
 }
 
 .btn__text {
   color: $white;
+  font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
 }
