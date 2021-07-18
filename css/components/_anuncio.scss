@@ -1,0 +1,27 @@
+.anucio {
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.anuncio__container {
+  background-color: blue;
+  width: 85rem;
+  height: 40em;
+  border-radius: 1em;
+  position: relative;
+}
+
+.anuncio__img {
+  width: 20rem;
+  position: absolute;
+  bottom: 65rem;
+  left: 4rem;
+}
+
+.anuncio__text {
+  margin-top: 10em;
+  font-size: 0.8em;
+}

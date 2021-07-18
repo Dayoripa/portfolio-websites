@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -734,5 +735,104 @@ button {
 
 .cards__puntos {
   font-size: 1.2em;
+}
+
+.business {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5em;
+}
+
+.business__text {
+  font-family: "Otomanopee One", sans-serif;
+  padding: 0 1.2em;
+}
+
+.business__name {
+  margin-top: 2em;
+}
+
+.business_title {
+  font-size: 1.4em;
+  color: rgba(3, 12, 93, 0.637);
+}
+
+.business__list {
+  line-height: 2;
+  color: rgba(3, 12, 93, 0.418);
+  font-weight: 700;
+}
+
+@media (min-width: 62em) {
+  .business__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.business__list-name {
+  font-size: 1.3em;
+  list-style: none;
+}
+
+.info {
+  width: 100%;
+  padding: 1.2em;
+}
+
+@media (min-width: 62em) {
+  .info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 3em;
+            column-gap: 3em;
+  }
+}
+
+.info__text {
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 1.4em;
+  color: rgba(3, 12, 93, 0.418);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.anucio {
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.anuncio__container {
+  background-color: blue;
+  width: 85rem;
+  height: 40em;
+  border-radius: 1em;
+  position: relative;
+}
+
+.anuncio__img {
+  width: 20rem;
+  position: absolute;
+  bottom: 65rem;
+  left: 4rem;
+}
+
+.anuncio__text {
+  margin-top: 10em;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=style.css.map */
