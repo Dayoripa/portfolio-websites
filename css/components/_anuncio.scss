@@ -1,27 +1,135 @@
-.anucio {
+.anuncio {
   height: 100%;
   width: 100%;
   font-size: 2rem;
   display: flex;
   justify-content: center;
+  @media (min-width: 48em) {
+    margin: 3em 0;
+  }
 }
 
 .anuncio__container {
-  background-color: blue;
-  width: 85rem;
-  height: 40em;
+  background-color: $anuncio;
+  width: 23rem;
+  height: 60rem;
   border-radius: 1em;
   position: relative;
+  padding: 0 1em;
+  font-size: 2rem;
+  margin-bottom: 1em;
+  @media (min-width: 30em) {
+    width: 28rem;
+  }
+  @media (min-width: 48em) {
+    width: 65rem;
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 62em) {
+    width: 90rem;
+    height: 30rem;
+  }
+  @media (min-width: 80em) {
+    width: 100rem;
+    height: 35rem;
+  }
 }
 
 .anuncio__img {
   width: 20rem;
   position: absolute;
-  bottom: 65rem;
-  left: 4rem;
+  left: 0.7em;
+  bottom: 17em;
+  @media (min-width: 30em) {
+    left: 2em;
+  }
+  @media (min-width: 48em) {
+    position: absolute;
+    bottom: 0em;
+    left: 0.5em;
+    width: 22rem;
+  }
+  @media (min-width: 62em) {
+    width: 24rem;
+  }
+  @media (min-width: 80em) {
+    width: 27rem;
+    left: 5em;
+  }
+}
+
+.anuncio__linea {
+  background-color: $subtitle-anuncio;
+  height: 1rem;
+  margin-top: 13em;
+  @media (min-width: 48em) {
+    display: none;
+  }
 }
 
 .anuncio__text {
-  margin-top: 10em;
+  text-align: justify;
+  font-family: $raleway;
+  @media (min-width: 48em) {
+    width: 19.5em;
+    margin-top: 0.5em;
+  }
+  @media (min-width: 62em) {
+    width: 30em;
+  }
+  @media (min-width: 80em) {
+    width: 55rem;
+  }
+}
+
+.anuncio__title {
+  margin: 1em 0;
+  font-size: 1em;
+  color: $title-anuncio;
+  @media (min-width: 48em) {
+    margin: 0.5em 0;
+  }
+  @media (min-width: 62em) {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 80em) {
+    font-size: 2.8rem;
+  }
+}
+
+.anuncio__subtilte {
   font-size: 0.8em;
+  margin: 1.3em 0;
+  color: $subtitle-anuncio;
+  @media (min-width: 30em) {
+    margin: 0.3em 0;
+  }
+  @media (min-width: 62em) {
+    font-size: 1em;
+    margin: 1.5em 0;
+  }
+}
+
+.btn--anuncio {
+  height: 5rem;
+  width: 15rem;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 1.3em auto;
+  background-color: $btn-anuncio;
+  @media (min-width: 30em) {
+    width: 18rem;
+    height: 6rem;
+    padding: 1.1em 0;
+    font-size: 1em;
+    margin: 0;
+  }
+  @media (min-width: 48em) {
+    padding: 0.8em 0;
+    margin-top: 0.8em;
+  }
 }

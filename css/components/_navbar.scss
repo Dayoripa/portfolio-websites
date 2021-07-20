@@ -1,15 +1,15 @@
 .navbar {
   height: 12rem;
   width: 100%;
+  max-width: 1440px;
   box-shadow: 0 0.4rem 0.5rem $shadow-navbar;
   position: fixed;
-  @media (min-width: 48em) {
-    width: 90%;
-    border-radius: 1rem 1rem 0 0;
-  }
+  z-index: 100;
 }
 
 .navbar__container {
+  display: flex;
+  // justify-content: center;
   background-color: $profile;
   height: 100%;
   left: 0;
