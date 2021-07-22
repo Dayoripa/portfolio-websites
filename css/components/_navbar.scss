@@ -9,25 +9,19 @@
 
 .navbar__container {
   display: flex;
-  // justify-content: center;
   background-color: $profile;
   height: 100%;
   left: 0;
   top: 0;
   width: 100%;
-  @media (min-width: 48em) {
-    border-radius: 1rem 1rem 0 0;
-  }
 }
 
 .navbar__menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 100%;
   @media (min-width: 62em) {
-    //justify-content: space-around;
     align-items: center;
-    //font-size: 1.3rem;
     height: 100%;
     padding: 0 2em;
   }
@@ -53,6 +47,7 @@
 
 .navbar__img {
   border-radius: 50%;
+  margin-left: 1em;
   @media (min-width: 62em) {
     width: 12%;
     height: 12%;
@@ -69,7 +64,6 @@
   top: 0;
   align-items: center;
   width: 100%;
-  // background-color: $menu;
   background-color: $links;
   height: 100%;
   overflow-y: auto;
@@ -78,7 +72,6 @@
   transition: opacity 0.4s;
   @media (min-width: 62em) {
     flex-direction: row;
-    //justify-content: flex-end;
     position: static;
     opacity: 1;
     overflow: initial;
@@ -107,17 +100,11 @@
   transition: 0.4s;
 }
 
-// .list:hover {
-//   background-color: $hover-menu;
-// }
-
-.navbar__open-menu {
-  width: 20rem;
-  height: 6rem;
+.btn__imgClose {
+  width: 10rem;
 }
-.navbar__close-menu {
-  width: 18rem;
-  height: 7rem;
+.btn__imgOpen {
+  width: 10rem;
 }
 
 .navbar__open-menu,
@@ -154,6 +141,13 @@
 .list__enlaces:hover::after {
   @media (min-width: 62em) {
     opacity: 1;
+  }
+}
+
+.list__enlaces.selected {
+  color: $img-line;
+  @media (min-width: 62em) {
+    color: white;
   }
 }
 
