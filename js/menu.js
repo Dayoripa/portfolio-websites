@@ -8,3 +8,11 @@ const toggleMenu = () =>{
 
 openMenu.addEventListener('click', toggleMenu);
 closeMenu.addEventListener('click', toggleMenu);
+
+const navbarLinks = document.querySelectorAll('.navbar__links a[href^="#"]');
+
+navbarLinks.forEach(links => {
+    links.addEventListener('click', function() {
+        menu.classList.remove("menu-opened");
+    })
+})

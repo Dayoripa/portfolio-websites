@@ -1,57 +1,48 @@
+.skills {
+  background-color: $languaje;
+  font-family: $otomanopee;
+  font-size: 3rem;
+  padding: 1em 0.5em;
+  text-transform: capitalize;
+  max-width: 1440px;
+  border-top: 1px solid rgba(0, 0, 0, 0.055);
+  @media (min-width: 48em) {
+    font-size: 3.5rem;
+  }
+}
+
 .skills__soft {
   width: 100%;
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 2rem;
-  @media (min-width: 30em) {
-    font-size: 2.7rem;
-  }
-  @media (min-width: 48em) {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-  }
-  @media (min-width: 62em) {
-    grid-template-columns: repeat(3, auto);
-  }
-  @media (min-width: 125em) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 3rem;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__title {
+  text-align: center;
+  color: $blue;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
 }
 
 .list-skills {
   @include skills-soft;
-}
-
-.list-skills__text {
-  font-family: $raleway;
-  font-weight: 600;
+  box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
+  border-radius: 40px;
   text-align: center;
-  color: $text-color;
-  text-transform: capitalize;
-  font-size: 0.8em;
+  font-size: 0.6em;
+  @media (min-width: 48em) {
+    margin: 2rem;
+  }
 }
 
-// .list-skills--design {
-//   background-color: $design;
-// }
-// .list-skills--develop {
-//   background-color: $develop;
-// }
-// .list-skills--marketing {
-//   background-color: $marketing;
-// }
-// .list-skills--it {
-//   background-color: $it;
-// }
-// .list-skills--busines {
-//   background-color: $busines;
-// }
-
-// .list-skills--comunication {
-//   background-color: $comunication;
+// .list-skills__text {
+//   font-family: $raleway;
+//   font-weight: 600;
+//   text-align: center;
+//   color: $text-color;
+//   text-transform: capitalize;
+//   font-size: 0.8em;
 // }

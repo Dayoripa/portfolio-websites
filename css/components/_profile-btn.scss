@@ -2,7 +2,6 @@
   background-color: $btn;
   font-size: 1.3rem;
   padding: 0.4em 0.8em;
-  color: $white;
   width: 9rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -16,7 +15,7 @@
 }
 
 .btn__text {
-  color: $white;
+  color: $blue;
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;

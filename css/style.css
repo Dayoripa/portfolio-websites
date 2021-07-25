@@ -17,11 +17,11 @@
 }
 
 .list-skills:nth-child(5) {
-  background-color: #b5f3eb;
+  background-color: #b5e0d7;
 }
 
 .list-skills:nth-child(6) {
-  background-color: #d89292;
+  background-color: #fff;
 }
 
 * {
@@ -119,7 +119,7 @@ button {
 .navbar__text {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #de596a;
+  color: #de596b;
 }
 
 @media (min-width: 62em) {
@@ -183,14 +183,21 @@ button {
 .navbar__links .list__enlaces {
   text-decoration: none;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0;
   position: relative;
+}
+
+@media (min-width: 43em) {
+  .navbar__links .list__enlaces {
+    font-size: 1.8em;
+  }
 }
 
 @media (min-width: 62em) {
   .navbar__links .list__enlaces {
     width: 100%;
+    font-size: 1.3em;
   }
 }
 
@@ -346,7 +353,7 @@ button {
 .profile__subtitle {
   font-size: 0.8em;
   margin-bottom: 1.3em;
-  color: #676976;
+  color: #fff;
 }
 
 @media (min-width: 62em) {
@@ -381,7 +388,7 @@ button {
 }
 
 .card {
-  background-color: #053b81;
+  background-color: #f0c1d4;
   width: 100%;
   height: 6rem;
   line-height: 1.6;
@@ -412,16 +419,29 @@ button {
 }
 
 .card__body {
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-family: "Raleway", sans-serif;
+  font-weight: bold;
   text-transform: capitalize;
-  color: #fff;
+  color: #061c9be3;
   text-align: left;
+}
+
+@media (min-width: 30em) {
+  .card__body {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 48em) {
+  .card__body {
+    margin-right: 0.5em;
+  }
 }
 
 @media (min-width: 62em) {
   .card__body {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 }
 
@@ -430,10 +450,9 @@ button {
 }
 
 .btn {
-  background-color: #140692;
+  background-color: #de596b;
   font-size: 1.3rem;
   padding: 0.4em 0.8em;
-  color: #fff;
   width: 9rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -453,7 +472,7 @@ button {
 }
 
 .btn__text {
-  color: #fff;
+  color: #061c9be3;
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
@@ -483,6 +502,7 @@ button {
 .language__info {
   padding: 1rem 0;
   font-size: 2rem;
+  color: rgba(255, 255, 255, 0.815);
 }
 
 @media (min-width: 48em) {
@@ -511,7 +531,7 @@ button {
 }
 
 .language__icon {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .language__icon--one {
@@ -528,7 +548,7 @@ button {
 
 .language__text {
   text-transform: capitalize;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 @media (min-width: 80em) {
@@ -550,7 +570,9 @@ button {
   width: 100%;
   text-align: center;
   font-size: 2rem;
-  padding: 1em 1.2em;
+  padding: 1.5em 1.2em;
+  background-color: #75a1c8;
+  border-top: 1px solid rgba(0, 0, 0, 0.055);
 }
 
 @media (min-width: 30em) {
@@ -562,13 +584,13 @@ button {
 @media (min-width: 62em) {
   .about {
     font-size: 1.8em;
-    padding: 1em 0;
+    padding: 0 1.8em;
   }
 }
 
 .about__title {
   font-size: 1.3em;
-  margin-bottom: 1em;
+  margin: 1em 0;
   color: #061c9be3;
   font-weight: bold;
   text-transform: capitalize;
@@ -579,81 +601,61 @@ button {
   font-size: 0.9em;
   font-weight: 500;
   text-align: left;
+  color: #000;
+  padding-bottom: 1em;
 }
 
 .skills {
-  background-color: #f0eaea;
+  background-color: #75a1c8;
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 3rem;
+  padding: 1em 0.5em;
+  text-transform: capitalize;
+  max-width: 1440px;
+  border-top: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+@media (min-width: 48em) {
+  .skills {
+    font-size: 3.5rem;
+  }
 }
 
 .skills__soft {
   width: 100%;
+  list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media (min-width: 30em) {
-  .skills__soft {
-    font-size: 2.7rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .skills__soft {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-@media (min-width: 62em) {
-  .skills__soft {
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
-  }
-}
-
-@media (min-width: 125em) {
-  .skills__soft {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    font-size: 3rem;
-  }
+.skills__title {
+  text-align: center;
+  color: #061c9be3;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
 }
 
 .list-skills {
-  width: 10em;
-  padding: 1em 0;
-  margin: 1em 0;
-  border-radius: 1rem;
+  padding: 0.5em 0.7em;
+  margin: 1rem;
+  -webkit-box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
+          box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
+  border-radius: 40px;
+  text-align: center;
+  font-size: 0.6em;
 }
 
-.list-skills__text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  color: #000;
-  text-transform: capitalize;
-  font-size: 0.8em;
+@media (min-width: 48em) {
+  .list-skills {
+    margin: 2rem;
+  }
 }
 
 .projects {

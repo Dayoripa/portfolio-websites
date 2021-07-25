@@ -1,4 +1,4 @@
-$colors: ($design, $develop, $marketing, $it, $busines, $comunication);
+$colors: ($design, $develop, $marketing, $it, $comunication, $white);
 
 @for $i from 1 through 6 {
   .list-skills:nth-child(#{$i}) {
