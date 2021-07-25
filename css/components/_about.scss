@@ -15,13 +15,14 @@
 .about__title {
   font-size: 1.3em;
   margin-bottom: 1em;
-  color: $about;
+  color: $blue;
   font-weight: bold;
   text-transform: capitalize;
+  font-family: $otomanopee;
 }
 
 .about__me {
-  text-align: justify;
   font-size: 0.9em;
   font-weight: 500;
+  text-align: left;
 }
