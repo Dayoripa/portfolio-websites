@@ -62,6 +62,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -76,14 +79,8 @@ button {
 }
 
 .navbar__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-decoration: none;
-  margin-top: 0.8em;
+  margin-left: 1.5rem;
 }
 
 @media (min-width: 62em) {
@@ -93,26 +90,26 @@ button {
 }
 
 .navbar__text {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
   color: white;
+  letter-spacing: 0.1cm;
 }
 
 @media (min-width: 62em) {
   .navbar__text {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-align: left;
   }
 }
 
 .navbar__img {
-  border-radius: 50%;
-  margin-left: 1em;
+  width: 7rem;
 }
 
 @media (min-width: 62em) {
   .navbar__img {
-    width: 12%;
-    height: 12%;
+    width: 8.3rem;
   }
 }
 
@@ -159,15 +156,9 @@ button {
 .navbar__links .list__enlaces {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0;
   position: relative;
-}
-
-@media (min-width: 43em) {
-  .navbar__links .list__enlaces {
-    font-size: 1.8em;
-  }
 }
 
 @media (min-width: 62em) {
@@ -188,11 +179,11 @@ button {
 }
 
 .btn__imgClose {
-  width: 8rem;
+  width: 6rem;
 }
 
 .btn__imgOpen {
-  width: 8rem;
+  width: 6rem;
 }
 
 .navbar__open-menu,
@@ -212,6 +203,7 @@ button {
 .navbar__close-menu {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding-top: 2em;
 }
 
 @media (min-width: 62em) {
@@ -284,7 +276,7 @@ button {
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 48em) {
   .profile {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
@@ -340,6 +332,12 @@ button {
 .profile__img {
   width: 70%;
   max-width: 40rem;
+}
+
+@media (min-width: 30em) {
+  .profile__img {
+    width: 30rem;
+  }
 }
 
 @media (min-width: 80em) {

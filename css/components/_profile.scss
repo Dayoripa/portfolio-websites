@@ -15,7 +15,7 @@
   @media (min-width: 30em) {
     font-size: 2rem;
   }
-  @media (min-width: 62em) {
+  @media (min-width: 48em) {
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-around;
@@ -58,6 +58,9 @@
 .profile__img {
   width: 70%;
   max-width: 40rem;
+  @media (min-width: 30em) {
+    width: 30rem;
+  }
   @media (min-width: 80em) {
     width: 80%;
   }

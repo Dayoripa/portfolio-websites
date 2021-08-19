@@ -24,6 +24,7 @@
 .navbar__menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   @media (min-width: 62em) {
     align-items: center;
@@ -33,29 +34,27 @@
 }
 
 .navbar__logo {
-  display: flex;
-  align-items: center;
   text-decoration: none;
-  margin-top: 0.8em;
+  margin-left: 1.5rem;
   @media (min-width: 62em) {
     width: 100%;
   }
 }
 .navbar__text {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
   color: white;
+  letter-spacing: 0.1cm;
   @media (min-width: 62em) {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-align: left;
   }
 }
 
 .navbar__img {
-  border-radius: 50%;
-  margin-left: 1em;
+  width: 7rem;
   @media (min-width: 62em) {
-    width: 12%;
-    height: 12%;
+    width: 8.3rem;
   }
 }
 
@@ -87,12 +86,9 @@
   .list__enlaces {
     text-decoration: none;
     color: $white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
     position: relative;
-    @media (min-width: 43em) {
-      font-size: 1.8em;
-    }
     @media (min-width: 62em) {
       width: 100%;
       font-size: 1.3em;
@@ -110,10 +106,10 @@
 }
 
 .btn__imgClose {
-  width: 8rem;
+  width: 6rem;
 }
 .btn__imgOpen {
-  width: 8rem;
+  width: 6rem;
 }
 
 .navbar__open-menu,
@@ -128,7 +124,7 @@
 
 .navbar__close-menu {
   align-self: flex-end;
-  // padding: 1.1em 0;
+  padding-top: 2em;
 }
 
 .list__enlaces::after {
