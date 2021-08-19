@@ -43,7 +43,7 @@
 .navbar__text {
   font-size: 1rem;
   text-align: center;
-  color: white;
+  color: black;
   letter-spacing: 0.1cm;
   @media (min-width: 62em) {
     font-size: 1.4rem;
@@ -85,7 +85,7 @@
 
   .list__enlaces {
     text-decoration: none;
-    color: $white;
+    color: $enlaces;
     font-size: 1.3em;
     margin: 0;
     position: relative;
@@ -130,7 +130,7 @@
 .list__enlaces::after {
   @media (min-width: 62em) {
     content: "";
-    background-color: $img-line;
+    background-color: $link-line;
     position: absolute;
     left: 0;
     top: calc(100% + 0.4rem);
@@ -150,14 +150,14 @@
 }
 
 .list__enlaces.selected {
-  color: $img-line;
+  color: #000;
   @media (min-width: 62em) {
     color: white;
   }
 }
 
 .list__enlaces:hover {
-  color: $title-profile;
+  color: $hover;
 }
 .menu-opened {
   opacity: 1;

@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: #fff;
+  background-color: #fce160;
 }
 
 .footer__container {
@@ -25,22 +25,21 @@
 }
 
 .footer__logo {
-  width: 10rem;
-  height: 10rem;
-  line-height: 10rem;
-  text-align: center;
-  border-radius: 50%;
-  background-color: $footer;
   margin: 0.5rem auto;
-  color: #ff9b00;
   @media (min-width: 48em) {
     grid-column-start: 2;
     grid-column-end: 3;
   }
 }
 
+.footer__img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 30%;
+}
+
 .footer__icono {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: $raleway;
 }
 
