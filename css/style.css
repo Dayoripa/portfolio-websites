@@ -723,66 +723,6 @@ button {
   }
 }
 
-.business {
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.business__text {
-  font-family: "Otomanopee One", sans-serif;
-}
-
-.business_title {
-  font-size: 1.4em;
-  color: rgba(3, 12, 93, 0.637);
-}
-
-.business__list {
-  line-height: 2;
-  color: rgba(3, 12, 93, 0.418);
-  font-weight: 700;
-}
-
-@media (min-width: 62em) {
-  .business__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-.business__list-name {
-  list-style: none;
-}
-
-.info {
-  width: 100%;
-}
-
-@media (min-width: 62em) {
-  .info {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
-    -webkit-column-gap: 3em;
-            column-gap: 3em;
-  }
-}
-
-.info__text {
-  width: 100%;
-  text-align: justify;
-  color: rgba(3, 12, 93, 0.418);
-  font-weight: bold;
-  font-size: 1em;
-}
-
 .anuncio {
   height: 100%;
   width: 100%;
