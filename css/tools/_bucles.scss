@@ -1,7 +1,7 @@
-$colors: ($design, $develop, $marketing, $it, $comunication, $white);
+//$colors: ($design, $develop, $marketing, $it, $comunication, $white);
 
-@for $i from 1 through 6 {
-  .list-skills:nth-child(#{$i}) {
-    background-color: (nth($colors, $i));
-  }
-}
+// @for $i from 1 through 6 {
+//   .list-skills:nth-child(#{$i}) {
+//     background-color: (nth($colors, $i));
+//   }
+// }

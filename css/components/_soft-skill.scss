@@ -1,10 +1,16 @@
+.skills__container {
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
 .skills {
-  background-color: $languaje;
-  font-family: $otomanopee;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: $raleway;
   font-size: 3rem;
   padding: 1em 0.5em;
   text-transform: capitalize;
-  max-width: 1440px;
   border-top: 1px solid rgba(0, 0, 0, 0.055);
   @media (min-width: 48em) {
     font-size: 3.5rem;
@@ -29,8 +35,11 @@
 
 .list-skills {
   @include skills-soft;
-  box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
-  border-radius: 40px;
+  border: 0.1rem solid white;
+  color: #262677;
+  font-weight: 800;
+  // box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
+  border-radius: 4rem;
   text-align: center;
   font-size: 0.6em;
   @media (min-width: 48em) {

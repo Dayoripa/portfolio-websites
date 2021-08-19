@@ -1,16 +1,18 @@
 .card {
   background-color: #f0c1d4;
-  width: 100%;
+  width: 20rem;
   height: 6rem;
   line-height: 1.6;
   border-radius: 1rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.6em;
+  margin: 0 auto;
   @media (min-width: 62em) {
     height: 4em;
+    margin: 0;
   }
   @media (min-width: 80em) {
     height: 4.2em;
@@ -18,12 +20,15 @@
 }
 
 .card__body {
-  font-size: 0.5em;
-  font-family: $raleway;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: $blue;
-  text-align: left;
+  display: none;
+  @media (min-width: 30em) {
+    font-size: 0.5em;
+    font-family: $raleway;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $blue;
+    text-align: center;
+  }
   @media (min-width: 30em) {
     font-size: 0.7em;
   }
@@ -38,3 +43,5 @@
 .card__text {
   font-size: 0.9em;
 }
+
+//scroll

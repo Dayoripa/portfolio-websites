@@ -1,17 +1,19 @@
 .business {
+  width: 100%;
   font-family: $raleway;
   text-align: center;
   font-size: 2rem;
-  margin-top: 5em;
+  margin-bottom: 2rem;
+  // margin-top: 5em;
 }
 
 .business__text {
   font-family: $otomanopee;
-  padding: 0 1.2em;
+  // padding: 0 1.2em;
 }
 
 .business__name {
-  margin-top: 2em;
+  // margin-top: 2em;
 }
 
 .business_title {
@@ -29,16 +31,13 @@
 }
 
 .business__list-name {
-  font-size: 1.3em;
+  //font-size: 1.3em;
   list-style: none;
-  //   @media (min-width: 62em) {
-  //     margin: 0 1em;
-  //   }
 }
 
 .info {
   width: 100%;
-  padding: 1.2em;
+  //padding: 1.2em;
   @media (min-width: 62em) {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -49,7 +48,7 @@
 .info__text {
   width: 100%;
   text-align: justify;
-  margin-bottom: 1.4em;
+  //margin-bottom: 1.4em;
   color: $list-business;
   font-weight: bold;
   font-size: 1em;
