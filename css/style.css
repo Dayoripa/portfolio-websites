@@ -36,9 +36,9 @@ button {
 .navbar {
   height: 14rem;
   width: 100%;
-  -webkit-box-shadow: 0 0.4rem 0.5rem #de596a;
-          box-shadow: 0 0.4rem 0.5rem #de596a;
-  background-color: #262677;
+  -webkit-box-shadow: 0 0.4rem 0.5rem #ff9b00;
+          box-shadow: 0 0.4rem 0.5rem #ff9b00;
+  background-color: #090c41;
   position: fixed;
   left: 0;
   top: 0;
@@ -95,7 +95,7 @@ button {
 .navbar__text {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #de596b;
+  color: white;
 }
 
 @media (min-width: 62em) {
@@ -133,7 +133,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #262677;
+  background-color: #090c41;
   height: 100%;
   overflow-y: auto;
   opacity: 0;
@@ -217,15 +217,15 @@ button {
 @media (min-width: 62em) {
   .list__enlaces::after {
     content: "";
-    background-color: #a19204;
+    background-color: #ff9b00;
     position: absolute;
     left: 0;
     top: calc(100% + 0.4rem);
     width: 100%;
     height: 0.4rem;
     opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
   }
 }
 
@@ -237,7 +237,7 @@ button {
 }
 
 .list__enlaces.selected {
-  color: #a19204;
+  color: #ff9b00;
 }
 
 @media (min-width: 62em) {
@@ -247,7 +247,7 @@ button {
 }
 
 .list__enlaces:hover {
-  color: #f1a0b9;
+  color: #ff9b00;
 }
 
 .menu-opened {
@@ -261,7 +261,7 @@ button {
 }
 
 .profile__container {
-  background: #363c8b;
+  background: #000c43;
 }
 
 .profile {
@@ -307,7 +307,7 @@ button {
 .profile__text {
   padding: 0.5em;
   margin-bottom: 1rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1cm;
 }
 
 @media (min-width: 62em) {
@@ -318,7 +318,7 @@ button {
 
 .profile__title {
   margin-bottom: 0.8em;
-  color: #fff;
+  color: #ff9b00;
 }
 
 .profile__subtitle {
@@ -344,12 +344,12 @@ button {
 
 @media (min-width: 80em) {
   .profile__img {
-    width: 100%;
+    width: 80%;
   }
 }
 
 .profile__line {
-  background-color: #a19204;
+  background-color: #ff9b00;
   height: 1rem;
   position: absolute;
   width: 100%;
@@ -358,7 +358,7 @@ button {
 }
 
 .card {
-  background-color: #f0c1d4;
+  background-color: #ff9b00;
   width: 20rem;
   height: 6rem;
   line-height: 1.6;
@@ -428,7 +428,7 @@ button {
 }
 
 .btn {
-  background-color: #de596b;
+  background-color: #ff9b00;
   font-size: 1.3rem;
   width: 15rem;
   height: 4rem;
@@ -454,10 +454,11 @@ button {
 }
 
 .btn__text {
-  color: #061c9be3;
+  color: #fff;
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
+  letter-spacing: 0.1cm;
 }
 
 .btn:hover {
@@ -484,7 +485,7 @@ button {
 
 .language__container {
   width: 100%;
-  background-color: #75a1c8;
+  background-color: #000134;
 }
 
 .language__info {
@@ -499,38 +500,22 @@ button {
   }
 }
 
-@media (min-width: 62em) {
-  .language__info {
-    font-size: 2.1rem;
+.language__icon {
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.795);
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (min-width: 48em) {
+  .language__icon {
+    font-size: 3.2rem;
   }
 }
 
-.language__icon {
-  font-size: 3em;
-}
-
-.language__icon--one {
-  color: #dd4b25;
-}
-
-.language__icon--two {
-  color: #146eb0;
-}
-
-.language__icon--three {
-  color: #efd81d;
-}
-
-.language__icon--four {
-  color: #d6002f;
-}
-
-.language__icon--five {
-  color: #d25191;
-}
-
-.language__icon--six {
-  color: #7cdef7;
+.language__icon:hover {
+  color: #ff9900bd;
 }
 
 .language__text {
@@ -555,7 +540,7 @@ button {
   text-align: center;
   font-size: 2rem;
   padding: 1.5em 1.2em;
-  background-color: #75a1c8;
+  background-color: #000134;
   border-top: 1px solid rgba(0, 0, 0, 0.055);
 }
 
@@ -591,17 +576,16 @@ button {
 
 .skills__container {
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
 }
 
 .skills {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
   font-size: 3rem;
   padding: 1em 0.5em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   border-top: 1px solid rgba(0, 0, 0, 0.055);
 }
 
@@ -627,31 +611,33 @@ button {
 
 .skills__title {
   text-align: center;
-  color: #061c9be3;
-  font-size: 0.9em;
+  color: black;
+  font-size: 0.8em;
+  font-weight: bold;
   margin-bottom: 0.5em;
 }
 
 .list-skills {
   padding: 0.5em 0.7em;
   margin: 1rem;
-  border: 0.1rem solid white;
-  color: #262677;
+  border: 0.2rem solid #ff9b00;
+  color: black;
   font-weight: 800;
   border-radius: 4rem;
   text-align: center;
-  font-size: 0.6em;
+  font-size: 0.4em;
 }
 
 @media (min-width: 48em) {
   .list-skills {
     margin: 2rem;
+    border: 0.3rem solid #ff9b00;
   }
 }
 
 .projects {
   width: 100%;
-  background-color: #f3f2f3;
+  background-color: #ffffff;
 }
 
 .project__container {
@@ -670,8 +656,8 @@ button {
 
 @media (min-width: 37.5em) {
   .projects__cards {
-    -ms-grid-columns: (minmax(300px, auto))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    -ms-grid-columns: (minmax(200px, auto))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1rem;
     padding: 0 0.5em;
   }
@@ -680,13 +666,12 @@ button {
 .cards {
   width: 100%;
   overflow: hidden;
-  background-color: blue;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 37.5em) {
   .cards {
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 }
 
@@ -695,15 +680,9 @@ button {
   height: 100%;
 }
 
-@media (min-width: 30em) {
-  .cards__img {
-    width: 100%;
-  }
-}
-
 @media (min-width: 48em) {
   .cards__body {
-    font-size: 1em;
+    font-size: 3em;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -734,13 +713,15 @@ button {
 .projects__title {
   padding: 1em 0;
   text-align: center;
-  color: #061c9be3;
-  font-size: 1.3em;
+  color: #000c43;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media (min-width: 43.75em) {
   .projects__title {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 }
 
@@ -1010,7 +991,7 @@ button {
 
 .contact {
   height: 100%;
-  background-color: #f6f6f6;
+  background-color: #fff;
 }
 
 .contact__container {
@@ -1057,7 +1038,15 @@ button {
 .contact__title {
   text-align: center;
   margin: 3rem 0 0.5em 0;
-  color: #262677;
+  color: #000c43;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+@media (min-width: 48em) {
+  .contact__title {
+    font-size: 2em;
+  }
 }
 
 .form__group {
@@ -1069,7 +1058,7 @@ button {
 .form__label {
   text-transform: capitalize;
   font-weight: bold;
-  color: #262677;
+  color: #000134;
 }
 
 .form__input {
@@ -1078,25 +1067,36 @@ button {
   border: 0;
   outline: none;
   background: transparent;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.2rem solid #ff9b00;
   font-size: 1.5em;
 }
 
 .contact__btn {
   display: block;
   width: 90%;
-  background-color: #262677;
+  text-decoration: none;
+  text-align: center;
+  background-color: #000c43;
   color: white;
-  height: 5rem;
-  font-size: 1em;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 1rem;
   margin: 0 auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media (min-width: 30em) {
   .contact__btn {
-    width: 30rem;
+    width: 25rem;
   }
+}
+
+.contact__btn:hover {
+  color: #ff9b00;
 }
 
 .form__textarea {
@@ -1106,13 +1106,13 @@ button {
   border: 0;
   outline: none;
   background-color: transparent;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.2rem solid #ff9b00;
   font-family: "Roboto", sans-serif;
 }
 
 .footer {
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #fff;
 }
 
 .footer__container {
@@ -1154,9 +1154,9 @@ button {
   line-height: 10rem;
   text-align: center;
   border-radius: 50%;
-  background-color: #262677;
-  margin: 0 auto;
-  color: white;
+  background-color: #000c43;
+  margin: 0.5rem auto;
+  color: #ff9b00;
 }
 
 @media (min-width: 48em) {
@@ -1176,7 +1176,7 @@ button {
   font-size: 2.5em;
   text-align: center;
   margin-top: 2rem;
-  color: #262677;
+  color: #000c43;
 }
 
 @media (min-width: 48em) {
@@ -1190,7 +1190,9 @@ button {
 
 .footer__text {
   font-size: 1.5em;
-  color: #0c0c8d;
+  font-weight: bold;
+  color: #000c43;
+  text-align: center;
 }
 
 @media (min-width: 48em) {
@@ -1198,17 +1200,22 @@ button {
     -ms-grid-column: 4;
         grid-column-start: 4;
     grid-column-end: 6;
+    text-align: left;
   }
 }
 
+.footer__title {
+  color: #ff9b00;
+}
+
 .footer__social {
-  background-color: #262677;
+  background-color: #000c43;
 }
 
 .footer__copy {
   text-align: center;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 2em 0;
-  color: white;
+  color: #ff9b00;
 }
 /*# sourceMappingURL=style.css.map */

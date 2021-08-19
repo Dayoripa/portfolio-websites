@@ -1,5 +1,5 @@
 .profile__container {
-  background: rgb(54, 60, 139);
+  background: #000c43;
 }
 
 .profile {
@@ -30,7 +30,7 @@
 .profile__text {
   padding: 0.5em;
   margin-bottom: 1rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1cm;
   @media (min-width: 62em) {
     text-align: left;
   }
@@ -38,7 +38,7 @@
 
 .profile__title {
   margin-bottom: 0.8em;
-  color: $white;
+  color: $title-profile;
 }
 
 .profile__subtitle {
@@ -59,7 +59,7 @@
   width: 70%;
   max-width: 40rem;
   @media (min-width: 80em) {
-    width: 100%;
+    width: 80%;
   }
 }
 

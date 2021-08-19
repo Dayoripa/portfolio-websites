@@ -1,16 +1,15 @@
 .skills__container {
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: $skill;
 }
 
 .skills {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  font-family: $raleway;
   font-size: 3rem;
   padding: 1em 0.5em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   border-top: 1px solid rgba(0, 0, 0, 0.055);
   @media (min-width: 48em) {
     font-size: 3.5rem;
@@ -28,30 +27,23 @@
 
 .skills__title {
   text-align: center;
-  color: $blue;
-  font-size: 0.9em;
+  color: black;
+  font-size: 0.8em;
+  font-weight: bold;
   margin-bottom: 0.5em;
 }
 
 .list-skills {
   @include skills-soft;
-  border: 0.1rem solid white;
-  color: #262677;
+  border: 0.2rem solid #ff9b00;
+  color: black;
   font-weight: 800;
   // box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
   border-radius: 4rem;
   text-align: center;
-  font-size: 0.6em;
+  font-size: 0.4em;
   @media (min-width: 48em) {
     margin: 2rem;
+    border: 0.3rem solid #ff9b00;
   }
 }
-
-// .list-skills__text {
-//   font-family: $raleway;
-//   font-weight: 600;
-//   text-align: center;
-//   color: $text-color;
-//   text-transform: capitalize;
-//   font-size: 0.8em;
-// }

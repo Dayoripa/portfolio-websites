@@ -1,6 +1,6 @@
 .contact {
   height: 100%;
-  background-color: #f6f6f6;
+  background-color: #fff;
 }
 
 .contact__container {
@@ -33,7 +33,12 @@
 .contact__title {
   text-align: center;
   margin: 3rem 0 0.5em 0;
-  color: #262677;
+  color: $title;
+  font-size: 1.8em;
+  font-weight: bold;
+  @media (min-width: 48em) {
+    font-size: 2em;
+  }
 }
 
 .form__group {
@@ -45,32 +50,41 @@
 .form__label {
   text-transform: capitalize;
   font-weight: bold;
-  color: #262677;
+  color: #000134;
 }
 
 .form__input {
   display: block;
   width: 100%;
-  // padding: 0.8em;
   border: 0;
   outline: none;
   background: transparent;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.2rem solid $input;
   font-size: 1.5em;
 }
 
 .contact__btn {
   display: block;
   width: 90%;
-  background-color: #262677;
+  text-decoration: none;
+  text-align: center;
+  background-color: $footer;
   color: white;
-  height: 5rem;
-  font-size: 1em;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 1rem;
   margin: 0 auto;
+  transition: 0.4s;
   @media (min-width: 30em) {
-    width: 30rem;
+    width: 25rem;
   }
+}
+
+.contact__btn:hover {
+  color: #ff9b00;
 }
 
 .form__textarea {
@@ -80,6 +94,6 @@
   border: 0;
   outline: none;
   background-color: transparent;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.2rem solid $input;
   font-family: $roboto;
 }

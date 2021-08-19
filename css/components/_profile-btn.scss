@@ -1,5 +1,5 @@
 .btn {
-  background-color: $btn;
+  background-color: $text-logo;
   font-size: 1.3rem;
   width: 15rem;
   height: 4rem;
@@ -19,10 +19,11 @@
 }
 
 .btn__text {
-  color: $blue;
+  color: $white;
   font-weight: bold;
   text-transform: capitalize;
   text-decoration: none;
+  letter-spacing: 0.1cm;
 }
 
 .btn:hover {

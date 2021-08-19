@@ -44,7 +44,7 @@
 .navbar__text {
   font-size: 1.8rem;
   font-weight: 700;
-  color: $text-logo;
+  color: white;
   @media (min-width: 62em) {
     font-size: 2rem;
   }
@@ -69,7 +69,7 @@
   top: 0;
   align-items: center;
   width: 100%;
-  background-color: $links;
+  background-color: $profile;
   height: 100%;
   overflow-y: auto;
   opacity: 0;
@@ -142,7 +142,7 @@
     height: 0.4rem;
 
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
   }
 }
 
@@ -161,7 +161,7 @@
 }
 
 .list__enlaces:hover {
-  color: #f1a0b9;
+  color: $title-profile;
 }
 .menu-opened {
   opacity: 1;
