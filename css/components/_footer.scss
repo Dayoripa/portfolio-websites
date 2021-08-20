@@ -61,7 +61,7 @@
 
 .footer__text {
   font-family: $poppins;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 700;
   color: $footer;
   letter-spacing: 0.2rem;
@@ -70,6 +70,7 @@
     grid-column-start: 4;
     grid-column-end: 6;
     text-align: left;
+    font-size: 1.2em;
   }
 }
 

@@ -400,16 +400,16 @@ button {
   margin: 0 auto;
 }
 
-@media (min-width: 62em) {
+@media (min-width: 48em) {
   .card {
-    height: 4em;
+    height: 3em;
     margin: 0;
   }
 }
 
 @media (min-width: 80em) {
   .card {
-    height: 4.2em;
+    height: 4em;
   }
 }
 
@@ -494,6 +494,10 @@ button {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 48em) {
@@ -524,7 +528,7 @@ button {
 }
 
 .language__icon {
-  font-size: 3em;
+  font-size: 2em;
   color: rgba(255, 255, 255, 0.952);
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -556,45 +560,6 @@ button {
 
 .language__title {
   font-weight: bold;
-}
-
-.about {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  padding: 1.5em 1.2em;
-  background-color: #000;
-  border-top: 1px solid rgba(0, 0, 0, 0.055);
-}
-
-@media (min-width: 30em) {
-  .about {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 62em) {
-  .about {
-    font-size: 1.8em;
-    padding: 0 1.8em;
-  }
-}
-
-.about__title {
-  font-size: 1.3em;
-  font-family: "Poppins", sans-serif;
-  margin: 1em 0;
-  color: #061c9be3;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.about__me {
-  font-size: 0.9em;
-  font-weight: 500;
-  text-align: left;
-  color: #000;
-  padding-bottom: 1em;
 }
 
 .skills__container {
@@ -966,7 +931,7 @@ button {
 
 .footer__text {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 700;
   color: #000;
   letter-spacing: 0.2rem;
@@ -979,6 +944,7 @@ button {
         grid-column-start: 4;
     grid-column-end: 6;
     text-align: left;
+    font-size: 1.2em;
   }
 }
 

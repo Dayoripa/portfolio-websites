@@ -4,7 +4,7 @@ const navbar = document.querySelector('.navbar');
         scrolled = window.scrollY;
 
         if(scrolled){
-            navbar.classList.add('scroll')
+            navbar.classList.add('scroll');
         }else{
             navbar.classList.remove('scroll');
         }
