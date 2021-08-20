@@ -27,18 +27,20 @@
 
 .skills__title {
   text-align: center;
+  font-family: $poppins;
   color: black;
   font-size: 0.8em;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.5em;
+  letter-spacing: 0.2rem;
 }
 
 .list-skills {
+  font-family: $roboto;
   @include skills-soft;
   border: 0.2rem solid #ff9b00;
   color: black;
   font-weight: 800;
-  // box-shadow: 0 0.4rem 1rem rgba(20, 2, 4, 0.842);
   border-radius: 4rem;
   text-align: center;
   font-size: 0.4em;

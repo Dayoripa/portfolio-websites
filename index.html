@@ -1,264 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <section class="navbar">
-                <div class="navbar__container">
-                    <nav class="navbar__menu">
-                        <a href="#" class="navbar__logo">
-                            <img src="./img/logo2.png" class="navbar__img"  alt="Logo"/>
-                            <div class="navbar__text">
-                                <p>Dayoripa</p>
-                            </div>
-                        </a>
-                        <button class="navbar__open-menu" aria-label="open menu">
-                            <img src="./img/btnHamburg.png" alt="botton hamburger" class="btn__imgOpen">
-                        </button>
-                        <ul class="navbar__links">
-                            <button class="navbar__close-menu">
-                                <img src="./img/btnClose.png" alt="imagen cerrar menu" class="btn__imgClose">
-                            </button>
-                            <li class="list">
-                                <a href="#home" class="list__enlaces selected">home</a>
-                            </li>
-                            <li class="list">
-                                <a href="#about" class="list__enlaces">about me</a>
-                            </li>
-                            <li class="list">
-                                <a href="#skills" class="list__enlaces">skills</a>
-                            </li>
-                            <li class="list">
-                                <a href="#projects" class="list__enlaces">projects</a>
-                            </li>
-                            <li class="list">
-                                <a href="#contact" class="list__enlaces">contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+      <header class="header" id="about">
+        <section class="navbar">
+          <div class="navbar__container">
+            <nav class="navbar__menu">
+              <a href="#" class="navbar__logo">
+                <img src="./img/logo2.png" class="navbar__img" alt="Logo" />
+                <div class="navbar__text">
+                  <p>Dayoripa</p>
                 </div>
+              </a>
+              <button class="navbar__open-menu" aria-label="open menu">
+                <img
+                  src="./img/menuHam.png"
+                  alt="botton hamburger"
+                  class="btn__imgOpen"
+                />
+              </button>
+              <ul class="navbar__links">
+                <button class="navbar__close-menu">
+                  <img
+                    src="./img/menuClose.png"
+                    alt="imagen cerrar menu"
+                    class="btn__imgClose"
+                  />
+                </button>
+                <li class="list">
+                  <a href="#home" class="list__enlaces selected">home</a>
+                </li>
+                <li class="list">
+                  <a href="#about" class="list__enlaces">about me</a>
+                </li>
+                <li class="list">
+                  <a href="#skills" class="list__enlaces">skills</a>
+                </li>
+                <li class="list">
+                  <a href="#projects" class="list__enlaces">projects</a>
+                </li>
+                <li class="list">
+                  <a href="#contact" class="list__enlaces">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <div class="profile__container">
+          <section class="profile" id="home">
+            <div class="profile__text">
+              <h1 class="profile__title">
+                Develope, you passions<br />
+                and feel enjoyment
+              </h1>
+              <p class="profile__subtitle">
+                Explorar nuevas habilidades, profundizar en las existentes.
+                <br />
+                y perderme en la creatividad.
+              </p>
+
+              <div class="card">
+                <div class="card__body">
+                  <p class="card__text">Lo que quiero aprender hoy</p>
+                  <h2 class="card__title">aprender diseño UI/UX</h2>
+                </div>
+                <div class="btn">
+                  <a href="#" class="btn__text"> get started </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile__image">
+              <img
+                src="./img/Phto-profile.png"
+                alt="Image Profile"
+                class="profile__img"
+              />
+              <div class="profile__line"></div>
+            </div>
+          </section>
+        </div>
+        <div class="language__container">
+          <section class="language">
+            <div class="language__info">
+              <span class="language__icon language__icon--one">
+                <i class="fab fa-html5"></i>
+              </span>
+              <div class="language__text">
+                <p class="language__title">html</p>
+              </div>
+            </div>
+
+            <div class="language__info">
+              <span class="language__icon language__icon--two">
+                <i class="fab fa-css3-alt"></i>
+              </span>
+              <div class="language__text">
+                <p class="language__title">css</p>
+              </div>
+            </div>
+
+            <div class="language__info">
+              <span class="language__icon language__icon--three">
+                <i class="fab fa-js-square"></i>
+              </span>
+              <div class="language__text">
+                <p class="language__title">javascript</p>
+              </div>
+            </div>
+
+            <div class="language__info">
+              <span class="language__icon language__icon--four">
+                <i class="fab fa-angular"></i>
+              </span>
+              <div class="language__text">
+                <p class="language__title">Angular</p>
+              </div>
+            </div>
+            <div class="language__info">
+              <span class="language__icon language__icon--five">
+                <i class="fab fa-sass"></i>
+              </span>
+              <div class="language__text">
+                <p class="language__title">sass</p>
+              </div>
+            </div>
+            <div class="language__info">
+              <span class="language__icon language__icon--six">
+                <i class="fab fa-react"></i>
+              </span>
+              <div class="language__text">
+                <p class="language__title">react</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <main class="content">
+        <div class="skills__container" id="skills">
+          <section class="skills">
+            <h2 class="skills__title">Habilidades Blandas</h2>
+            <ul class="skills__soft">
+              <li class="list-skills">Trabajo en equipo</li>
+              <li class="list-skills">comunicacion</li>
+              <li class="list-skills">flexibilidad</li>
+              <li class="list-skills">Gestion del tiempo</li>
+              <li class="list-skills">Adaptación al cambio</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="projects" id="projects">
+          <section class="project__container">
+            <h2 class="projects__title">Proyectos</h2>
+            <section class="projects__cards">
+              <div class="cards">
+                <img
+                  src="./img/imageCard1.jpg"
+                  alt="imagen cards"
+                  class="cards__img"
+                  width="50%"
+                  height="100%"
+                />
+                <div class="cards__body">
+                  <h4 class="cards__description">
+                    Lorem ipsum dolor sit amet consectetur
+                  </h4>
+                </div>
+              </div>
+              <div class="cards">
+                <img
+                  src="./img/imageCard1.jpg"
+                  alt="imagen cards"
+                  class="cards__img"
+                  width="100%"
+                  height="100%"
+                />
+                <div class="cards__body">
+                  <h4 class="cards__description">
+                    Lorem ipsum dolor sit amet consectetur
+                  </h4>
+                </div>
+              </div>
+              <div class="cards">
+                <img
+                  src="./img/imageCard1.jpg"
+                  alt="imagen cards"
+                  class="cards__img"
+                  width="100%"
+                  height="100%"
+                />
+                <div class="cards__body">
+                  <h4 class="cards__description">
+                    Lorem ipsum dolor sit amet consectetur
+                  </h4>
+                </div>
+              </div>
             </section>
-            <div class="profile__container">
-                <section class="profile" id="home">
-                    <div class="profile__text">
-                        <h1 class="profile__title">
-                            Develope, you passions<br />
-                            and feel enjoyment
-                        </h1>
-                        <p class="profile__subtitle">
-                            Explorar nuevas habilidades, profundizar en las existentes. <br />
-                            y perderme en la creatividad.
-                        </p>
-                
-                        <div class="card">
-                            <div class="card__body">
-                                <p class="card__text">
-                                    Lo que quiero aprender hoy
-                                </p>
-                                <h2 class="card__title">
-                                    aprender diseño UI/UX
-                                </h2>
-                            </div>
-                            <div class="btn">
-                                <a href="#" class="btn__text">
-                                    get started
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="profile__image">
-                        <img src="./img/Phto-profile.png" alt="Image Profile" class="profile__img" />
-                        <div class="profile__line"></div>
-                    </div>
-                </section>
-            </div>
-            <div class="language__container">
-                <section class="language">
-                    <div class="language__info">
-                        <span class="language__icon language__icon--one">
-                            <i class="fab fa-html5"></i>
-                        </span>
-                        <div class="language__text">
-                            <p class="language__title">
-                                html
-                            </p>
-                        </div>
-                    </div>
-                
-                    <div class="language__info">
-                        <span class="language__icon language__icon--two">
-                            <i class="fab fa-css3-alt"></i>
-                        </span>
-                        <div class="language__text">
-                            <p class="language__title">
-                                css
-                            </p>
-                        </div>
-                    </div>
-                
-                    <div class="language__info">
-                        <span class="language__icon language__icon--three">
-                            <i class="fab fa-js-square"></i>
-                        </span>
-                        <div class="language__text">
-                            <p class="language__title">
-                                javascript
-                            </p>
-                        </div>
-                    </div>
+          </section>
+        </div>
 
-                    <div class="language__info">
-                        <span class="language__icon language__icon--four">
-                        <i class="fab fa-angular"></i>
-                        </span>
-                        <div class="language__text">
-                            <p class="language__title">
-                                Angular
-                            </p>
-                        </div>
-                    </div>
-                    <div class="language__info">
-                        <span class="language__icon language__icon--five">
-                            <i class="fab fa-sass"></i>
-                        </span>
-                        <div class="language__text">
-                            <p class="language__title">
-                                sass
-                            </p>
-                        </div>
-                    </div>
-                    <div class="language__info">
-                        <span class="language__icon language__icon--six">
-                            <i class="fab fa-react"></i>
-                        </span>
-                        <div class="language__text">
-                            <p class="language__title">
-                                react
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div>  
-        </header>
-        <main class="content">
-            <div class="skills__container" id="skills">
-                <section class="skills">
-                    <h2 class="skills__title">
-                        Habilidades Blandas
-                    </h2>
-                    <ul class="skills__soft">
-                        <li class="list-skills">
-                            Trabajo en equipo
-                        </li>
-                        <li class="list-skills">
-                            comunicacion
-                        </li>
-                        <li class="list-skills">
-                            flexibilidad
-                        </li>
-                        <li class="list-skills">
-                            Gestion del tiempo
-                        </li>
-                        <li class="list-skills">
-                            Adaptación al cambio
-                        </li>
-                    </ul>
-                </section>
-            </div>   
-
-            <div class="projects" id="projects">
-                 <section class="project__container">
-                     <h2 class="projects__title">Proyectos</h2>
-                     <section class="projects__cards">
-                        <div class="cards">
-                            <img src="./img/imageCard1.jpg" alt="imagen cards"
-                             class="cards__img" width="50%" height="100%" />
-                            <div class="cards__body">
-                                <h4 class="cards__description"> Lorem ipsum dolor sit amet consectetur</h4>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <img src="./img/imageCard1.jpg" alt="imagen cards"
-                            class="cards__img"  width="100%" height="100%" />
-                            <div class="cards__body">
-                                <h4 class="cards__description"> Lorem ipsum dolor sit amet consectetur</h4>
-                            </div>
-                        </div>
-                        <div class="cards">
-                            <img src="./img/imageCard1.jpg" alt="imagen cards"
-                            class="cards__img"  width="100%" height="100%" />
-                            <div class="cards__body">
-                                <h4 class="cards__description"> Lorem ipsum dolor sit amet consectetur</h4>
-                            </div>
-                        </div>
-                       
-                    </section>
-                 </section>            
-            </div>
-
-            <Section class="contact" id="contact">
-                <div class="contact__container">
-                    <div class="contact__form">
-                        <h2 class="contact__title">
-                            Cont&aacute;ctame
-                        </h2>
-                        <form class="form">
-                            <div class="form__group">
-                                <label for="name" class="form__label">nombre</label>
-                                <input type="text" name="name" class="form__input">
-                            </div>
-                            <div class="form__group">
-                                <label class="form__label">email</label>
-                                <input type="email" class="form__input">
-                            </div>
-                            <div class="form__group">
-                                <label class="form__label">mensaje</label>
-                                <textarea name="message" rows="" cols="30" class="form__textarea">
-                                            </textarea>
-                            </div>
-                            <a href="#" class="contact__btn">
-                                <h3>Enviar</h3>
-                            </a>
-                        </form>
-                    </div>
+        <section class="contact" id="contact">
+          <div class="contact__container">
+            <div class="contact__form">
+              <h2 class="contact__title">Cont&aacute;ctame</h2>
+              <form class="form">
+                <div class="form__group">
+                  <label for="name" class="form__label">nombre</label>
+                  <input type="text" name="name" class="form__input" />
                 </div>
-            </Section>
-        </main>
-        <footer class="footer">
-            <article class="footer__container">
-                <article class="footer__info">
-                    <section class="footer__logo">
-                        <h2 class="footer__icono">
-                           <img src="./img/logo2.png" class="footer__img" alt="Logo">
-                        </h2>
-                    </section>
-                    <section class="footer__text">
-                        <p class="footer__title">Web developer</p>
-                           <p>Full stack</p>
-                        </section>
-                    <section class="footer__redes">
-                        <i class="fab fa-whatsapp"></i>
-                        <i class="fab fa-facebook-f"></i>
-                    </section>
-                </article>
-            </article>
-            <article class="footer__social">
-                    <section class="footer__copy">
-                        <h3> &copy; Daulin riascos - 2021</h3>
-                    </section>
-            </article>
-        </footer>
+                <div class="form__group">
+                  <label class="form__label">email</label>
+                  <input type="email" class="form__input" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label">mensaje</label>
+                  <textarea
+                    name="message"
+                    rows=""
+                    cols="30"
+                    class="form__textarea"
+                  >
+                  </textarea>
+                </div>
+                <a href="#" class="contact__btn">
+                  <h3>Enviar</h3>
+                </a>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <article class="footer__container">
+          <article class="footer__info">
+            <section class="footer__logo">
+              <h2 class="footer__icono">
+                <img src="./img/logo2.png" class="footer__img" alt="Logo" />
+              </h2>
+            </section>
+            <section class="footer__text">
+              <p class="footer__title">Web developer</p>
+              <p>Full stack</p>
+            </section>
+            <section class="footer__redes">
+                <a href="https://web.whatsapp.com/"
+                 class="footer-link"><i class="fab fa-whatsapp-square"></i></a>
+                <a href="#" class="footer-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="linkedin.com/in/daulin-riascos-payan-a31a1628"
+                 class="footer-link"><i class="fab fa-linkedin-in"></i></a>
+            </section>
+          </article>
+        </article>
+        <article class="footer__social">
+          <section class="footer__copy">
+            <h3>&copy; Daulin riascos - 2021</h3>
+          </section>
+        </article>
+      </footer>
 
-            <!-- <section class="business">
+      <!-- <section class="business">
                 <div class="business__text">
                     <h3 class="business_title">
                         Trusted by the worl'd largest business
@@ -309,5 +318,6 @@
             </section> -->
     </div>
     <script src="./js/menu.js"></script>
-</body>
+    <script src="./js/scroll.js"></script>
+  </body>
 </html>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,13 +37,16 @@ button {
 .navbar {
   height: 14rem;
   width: 100%;
-  -webkit-box-shadow: 0 0.4rem 0.5rem #000;
-          box-shadow: 0 0.4rem 0.5rem #000;
-  background-color: #dd980c;
+  background-color: #f1bd36;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
+}
+
+.scroll {
+  -webkit-box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.11);
+          box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.11);
 }
 
 .navbar__container {
@@ -93,23 +97,25 @@ button {
   font-size: 1rem;
   text-align: center;
   color: black;
-  letter-spacing: 0.1cm;
+  letter-spacing: 0.1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (min-width: 62em) {
   .navbar__text {
     font-size: 1.4rem;
     text-align: left;
+    letter-spacing: 0.2rem;
   }
 }
 
 .navbar__img {
-  width: 7rem;
+  width: 5rem;
 }
 
 @media (min-width: 62em) {
   .navbar__img {
-    width: 8.3rem;
+    width: 8rem;
   }
 }
 
@@ -130,7 +136,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #dd980c;
+  background-color: #f1bd36;
   height: 100%;
   overflow-y: auto;
   opacity: 0;
@@ -153,17 +159,26 @@ button {
   }
 }
 
-.navbar__links .list__enlaces {
+.list__enlaces {
   text-decoration: none;
   color: #000;
   font-size: 1.3em;
   margin: 0;
   position: relative;
+  letter-spacing: 0.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 @media (min-width: 62em) {
-  .navbar__links .list__enlaces {
+  .list__enlaces {
     width: 100%;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 72.5em) {
+  .list__enlaces {
     font-size: 1.3em;
   }
 }
@@ -272,7 +287,7 @@ button {
 
 @media (min-width: 30em) {
   .profile {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -285,8 +300,8 @@ button {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    font-size: 2.1rem;
-    padding-top: 3rem;
+    font-size: 2em;
+    padding-top: 1rem;
   }
 }
 
@@ -299,24 +314,34 @@ button {
 .profile__text {
   padding: 0.5em;
   margin-bottom: 1rem;
-  letter-spacing: 0.1cm;
+  letter-spacing: 0.1rem;
 }
 
-@media (min-width: 62em) {
+@media (min-width: 48em) {
   .profile__text {
     text-align: left;
   }
 }
 
+@media (min-width: 62em) {
+  .profile__text {
+    font-size: 1.3em;
+    margin-top: 1em;
+  }
+}
+
 .profile__title {
-  margin-bottom: 0.8em;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.6em;
   color: #000;
 }
 
 .profile__subtitle {
   font-size: 0.8em;
-  margin-bottom: 1.3em;
+  margin-bottom: 1em;
   color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 @media (min-width: 62em) {
@@ -557,11 +582,11 @@ button {
 
 .about__title {
   font-size: 1.3em;
+  font-family: "Poppins", sans-serif;
   margin: 1em 0;
   color: #061c9be3;
   font-weight: bold;
   text-transform: capitalize;
-  font-family: "Otomanopee One", sans-serif;
 }
 
 .about__me {
@@ -609,13 +634,16 @@ button {
 
 .skills__title {
   text-align: center;
+  font-family: "Poppins", sans-serif;
   color: black;
   font-size: 0.8em;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0.5em;
+  letter-spacing: 0.2rem;
 }
 
 .list-skills {
+  font-family: "Roboto", sans-serif;
   padding: 0.5em 0.7em;
   margin: 1rem;
   border: 0.2rem solid #ff9b00;
@@ -711,9 +739,11 @@ button {
 .projects__title {
   padding: 1em 0;
   text-align: center;
-  color: #000c43;
+  font-family: "Poppins", sans-serif;
+  color: black;
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
@@ -772,9 +802,11 @@ button {
 .contact__title {
   text-align: center;
   margin: 3rem 0 0.5em 0;
-  color: #000c43;
+  color: black;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
 }
 
 @media (min-width: 48em) {
@@ -791,8 +823,10 @@ button {
 
 .form__label {
   text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #000134;
+  letter-spacing: 0.2rem;
 }
 
 .form__input {
@@ -815,6 +849,7 @@ button {
   height: 6rem;
   line-height: 6rem;
   font-size: 0.8em;
+  letter-spacing: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 1rem;
@@ -895,9 +930,13 @@ button {
 }
 
 .footer__img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 30%;
+  width: 10rem;
+}
+
+@media (min-width: 48em) {
+  .footer__img {
+    width: 12rem;
+  }
 }
 
 .footer__icono {
@@ -909,22 +948,28 @@ button {
   font-size: 2.5em;
   text-align: center;
   margin-top: 2rem;
-  color: #000;
 }
 
 @media (min-width: 48em) {
   .footer__redes {
     -ms-grid-column: 7;
         grid-column-start: 7;
-    grid-column-end: 8;
+    grid-column-end: 9;
     font-size: 3em;
   }
 }
 
-.footer__text {
-  font-size: 1.5em;
-  font-weight: bold;
+.footer-link {
+  text-decoration: none;
   color: #000;
+}
+
+.footer__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.2rem;
   text-align: center;
 }
 

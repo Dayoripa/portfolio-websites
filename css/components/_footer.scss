@@ -33,9 +33,10 @@
 }
 
 .footer__img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 30%;
+  width: 10rem;
+  @media (min-width: 48em) {
+    width: 12rem;
+  }
 }
 
 .footer__icono {
@@ -47,18 +48,23 @@
   font-size: 2.5em;
   text-align: center;
   margin-top: 2rem;
-  color: $footer;
   @media (min-width: 48em) {
     grid-column-start: 7;
-    grid-column-end: 8;
+    grid-column-end: 9;
     font-size: 3em;
   }
 }
+.footer-link {
+  text-decoration: none;
+  color: $footer;
+}
 
 .footer__text {
+  font-family: $poppins;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 700;
   color: $footer;
+  letter-spacing: 0.2rem;
   text-align: center;
   @media (min-width: 48em) {
     grid-column-start: 4;

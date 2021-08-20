@@ -58,9 +58,11 @@
 .projects__title {
   padding: 1em 0;
   text-align: center;
-  color: $title;
+  font-family: $poppins;
+  color: black;
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   @media (min-width: 43.75em) {
     font-size: 2em;
