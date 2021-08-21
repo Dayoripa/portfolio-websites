@@ -1,11 +1,18 @@
 .btn {
+  font-family: $poppins;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
   background-color: $btn;
-  font-size: 1.3rem;
-  width: 15rem;
-  height: 4rem;
-  line-height: 4rem;
-  border-radius: 0.5rem;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 18rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 1rem;
   text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
   @media (min-width: 62em) {
     width: 7em;
     font-size: 0.9em;
@@ -18,14 +25,13 @@
   }
 }
 
-.btn__text {
-  color: $white;
-  font-weight: bold;
-  text-transform: capitalize;
-  text-decoration: none;
-  letter-spacing: 0.1cm;
+.btn:hover {
+  background-color: white;
+  color: #000;
+  border: 0.1rem solid #000;
 }
 
-.btn:hover {
-  filter: brightness(130%);
-}
+// .btn__text:hover {
+//   color: #000;
+//   font-size: 1em;
+// }

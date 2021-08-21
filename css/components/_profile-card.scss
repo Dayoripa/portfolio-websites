@@ -1,9 +1,7 @@
 .card {
-  background-color: $btn;
   width: 20rem;
   height: 6rem;
   line-height: 1.6;
-  border-radius: 1rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -12,7 +10,14 @@
   margin: 0 auto;
   @media (min-width: 48em) {
     height: 3em;
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 50em) {
+    width: 22rem;
+    height: 3em;
     margin: 0;
+    justify-content: start;
+    padding: 0;
   }
   @media (min-width: 80em) {
     height: 4em;
